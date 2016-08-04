@@ -323,6 +323,7 @@ public class SwiftUnderFileSystem extends UnderFileSystem {
       LOG.error("Attempting to create directory with a null path");
       return false;
     }
+    LOG.debug("Make directory {}", path);
     if (isDirectory(path)) {
       return true;
     }
